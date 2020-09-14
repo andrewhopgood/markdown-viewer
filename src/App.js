@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 
-
+let marked = require("marked");
 function App() {
 
   const [editorText, setEditorText] = useState("Hi");
@@ -14,8 +14,8 @@ function App() {
   return (
     <div className="App">
 
-      <textarea onChange={previewText} id="editor" ></textarea>
-      <div id="preview">{editorText}</div>
+      <textarea onChange={previewText} value={editorText} id="editor" ></textarea>
+      <div id="preview" dangerouslySetInnerHTML={{ __html: marked(editorText) }}></div>
     </div>
   );
 }
