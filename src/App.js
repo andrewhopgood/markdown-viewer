@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
-
 import md from './data/md'
+import Editor from "./components/Editor"
+import Preview from "./components/Preview"
+
 let marked = require("marked");
+
+
 
 
 function App() {
@@ -17,8 +21,8 @@ function App() {
   return (
     <div className="App">
 
-      <textarea onChange={previewText} value={editorText} id="editor" ></textarea>
-      <div id="preview" dangerouslySetInnerHTML={{ __html: marked(editorText, { breaks: true }) }}></div>
+      <Editor previewText={previewText} editorText={editorText} />
+      <Preview marked={marked} editorText={editorText} />
     </div>
   );
 }
