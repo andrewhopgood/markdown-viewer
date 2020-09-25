@@ -1,0 +1,15 @@
+#header__container {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 30px;
+  background-color: rgb(226, 141, 55);
+  border: 1px solid black;
+  border-bottom: none;
+}
+
+#header__title {
+  font-size: 16px;
+  margin-left: 5px;
+  color: black;
+}

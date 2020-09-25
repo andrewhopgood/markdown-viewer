@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import "../styles/Editor.css";
 
 export default function Editor({ previewText, editorText }) {
-    return (
-        <>
-            <textarea onChange={previewText} value={editorText} id="editor" ></textarea>
-        </>
-    )
+  return (
+    <div>
+      <textarea
+        onChange={previewText}
+        value={editorText}
+        id="editor"
+      ></textarea>
+    </div>
+  );
 }

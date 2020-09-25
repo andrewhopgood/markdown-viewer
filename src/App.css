@@ -1,5 +1,7 @@
-* {
+body {
   box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .App {
@@ -8,34 +10,4 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-}
-
-#editor
- {
-  width: 60%;
-  height: 250px;
-  margin-bottom: 100px;
-}
-
-#preview {
-  margin: 0;
-  width: 80%;
-  background-color: #68adee;
-  padding: 10px;
-  margin-bottom: 500px;
-  border-style:  10px solid #9e4f9e;
-} 
-
-blockquote {
-  color: #333333;
-  margin-top: 5px;
-  padding-top: 2px;
-  padding-left: 10px;
-  padding-bottom: 3px;
-  margin-bottom: 5px;
-  border-left: 8px solid rgb(143, 143, 143);
-}
-
-img {
-  width: 50%;
 }
